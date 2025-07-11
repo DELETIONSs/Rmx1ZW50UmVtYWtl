@@ -1,9 +1,9 @@
 return {
 	Name = "Discord",
-	Accent = Color3.fromRGB(88, 101, 242), -- Discord blurple
+	Accent = Color3.fromRGB(88, 101, 242),
 
-	AcrylicMain = Color3.fromRGB(54, 57, 63),       -- Main background
-	AcrylicBorder = Color3.fromRGB(47, 49, 54),     -- Outer borders
+	AcrylicMain = Color3.fromRGB(54, 57, 63),
+	AcrylicBorder = Color3.fromRGB(47, 49, 54),
 	AcrylicGradient = ColorSequence.new(Color3.fromRGB(47, 49, 54), Color3.fromRGB(47, 49, 54)),
 	AcrylicNoise = 0.8,
 
@@ -40,8 +40,8 @@ return {
 	DialogInput = Color3.fromRGB(64, 68, 75),
 	DialogInputLine = Color3.fromRGB(88, 101, 242),
 
-	Text = Color3.fromRGB(220, 221, 222), -- Main readable text
-	SubText = Color3.fromRGB(185, 187, 190), -- Slightly faded description text
+	Text = Color3.fromRGB(220, 221, 222),
+	SubText = Color3.fromRGB(185, 187, 190),
 	Hover = Color3.fromRGB(64, 68, 75),
 	HoverChange = 0.06,
 }
