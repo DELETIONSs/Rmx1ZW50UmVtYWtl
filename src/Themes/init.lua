@@ -6,13 +6,16 @@ local Themes = {
 		"Aqua",
 		"Amethyst",
 		"Rose",
-		"Discord",
+		"Discord"
 	},
 }
 
-for _, Theme in next, script:GetChildren() do
-	local Required = require(Theme)
-	Themes[Required.Name] = Required
+for _, Theme in next, Themes.Names do
+	local ThemeData = require(script[Theme])
+
+	ThemeData.Name = Theme
+
+	Themes[ThemeData.Name] = ThemeData
 end
 
 return Themes
