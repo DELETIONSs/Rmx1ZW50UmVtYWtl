@@ -1,9 +1,9 @@
-local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
-local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/DELETIONSs/Rmx1ZW50UmVtYWtl/refs/heads/master/dfggdf.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/DELETIONSs/Rmx1ZW50UmVtYWtl/refs/heads/master/Addons/SaveManager.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/DELETIONSs/Rmx1ZW50UmVtYWtl/refs/heads/master/Addons/InterfaceManager.lua"))()
 
-local Window = Fluent:CreateWindow({
-    Title = "Fluent " .. Fluent.Version,
+local Window = library:CreateWindow({
+    Title = "",
     SubTitle = "by dawid",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
@@ -12,16 +12,19 @@ local Window = Fluent:CreateWindow({
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
 
---Fluent provides Lucide Icons https://lucide.dev/icons/ for the tabs, icons are optional
 local Tabs = {
     Main = Window:AddTab({ Title = "Main", Icon = "" }),
+	Player = Window:AddTab({ Title = "User", Icon = "" })
+	Server = Window:AddTab({ Title = "Server", Icon = "" })
+	Credits = Window:AddTab({ Title = "Credits", Icon = "" })
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+	
 }
 
 local Options = Fluent.Options
 
 do
-    Fluent:Notify({
+    library:Notify({
         Title = "Notification",
         Content = "This is a notification",
         SubContent = "SubContent", -- Optional
@@ -227,8 +230,8 @@ end
 -- InterfaceManager (Allows you to have a interface managment system)
 
 -- Hand the library over to our managers
-SaveManager:SetLibrary(Fluent)
-InterfaceManager:SetLibrary(Fluent)
+SaveManager:SetLibrary(library)
+InterfaceManager:SetLibrary(library)
 
 -- Ignore keys that are used by ThemeManager.
 -- (we dont want configs to save themes, do we?)
@@ -249,7 +252,7 @@ SaveManager:BuildConfigSection(Tabs.Settings)
 
 Window:SelectTab(1)
 
-Fluent:Notify({
+library:Notify({
     Title = "Fluent",
     Content = "The script has been loaded.",
     Duration = 8
