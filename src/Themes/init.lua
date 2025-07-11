@@ -6,7 +6,7 @@ local Themes = {
 		"Aqua",
 		"Amethyst",
 		"Rose",
-		"DiscordDark"
+		"DiscordDark",
 	},
 }
 
