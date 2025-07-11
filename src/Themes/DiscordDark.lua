@@ -1,5 +1,5 @@
 return {
-	Name = "DiscordDark",
+	Name = "Discord",
 	Accent = Color3.fromRGB(88, 101, 242), -- Discord blurple
 
 	AcrylicMain = Color3.fromRGB(54, 57, 63),       -- Main background
